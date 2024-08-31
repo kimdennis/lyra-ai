@@ -1,0 +1,7 @@
+artist_name: "Eminem"
+dataset_path: "../data/processed/filtered_lyrics.csv"
+output_dir: "../models/checkpoints/"
+model_dir: "../models/fine_tuned_model/"
+max_length: 150
+batch_size: 4
+epochs: 3

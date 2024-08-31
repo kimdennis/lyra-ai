@@ -1,0 +1,30 @@
+# Ignore everything
+*
+
+# Unignore the .gitignore file
+!.gitignore
+
+# Unignore essential files
+!README.md
+!requirements.txt
+
+# Unignore directories
+!src/
+!tests/
+!data/processed/
+!notebooks/
+
+# Unignore specific files in otherwise ignored directories
+!data/processed/filtered_lyrics.csv
+
+# Ignore virtual environment and other unnecessary files
+venv/
+logs/
+models/
+*.log
+
+# If you have any compiled files or temporary files, ignore them
+*.pyc
+__pycache__/
+*.tmp
+.DS_Store
