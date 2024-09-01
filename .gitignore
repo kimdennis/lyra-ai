@@ -1,30 +1,51 @@
 # Ignore everything
 *
 
-# Unignore the .gitignore file
+# Allow tracking of essential files
 !.gitignore
-
-# Unignore essential files
 !README.md
 !requirements.txt
-
-# Unignore directories
 !src/
 !tests/
 !data/processed/
 !notebooks/
 
-# Unignore specific files in otherwise ignored directories
-!data/processed/filtered_lyrics.csv
-
-# Ignore virtual environment and other unnecessary files
-venv/
+# Ignore generated and temporary files
+data/*
+data/processed/*
 logs/
-models/
 *.log
 
-# If you have any compiled files or temporary files, ignore them
-*.pyc
+# Ignore virtual environments and dependencies
+venv/
+node_modules/
+Pipfile.lock
+
+# Ignore build and distribution directories
+build/
+dist/
+*.egg-info/
+*.egg
 __pycache__/
-*.tmp
+*.py[cod]
+*~
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+
+# Ignore coverage and test results
+.tox/
+.coverage
+coverage.xml
+nosetests.xml
+
+# Ignore OS specific files
 .DS_Store
+Thumbs.db
+Desktop.ini
+
+# Ignore sensitive files
+*.env
+.env
+.env.*
