@@ -23,25 +23,31 @@ This project uses GPT-2 to generate lyrics based on a prompt. The script loads a
 
 2. **Set up a virtual environment:**
 
+   ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 3. **3. Install Project Dependencies**
 
+   ```bash
    pip install -r requirements.txt
 
 4. **Preprocess the Data**
 
+   ```bash
    python src/data_preprocessing.py
 
 5. **Train the Model**
    
+   ```bash
    python src/model_training.py
 
 6. **Generate Lyrics**
 
+   ```bash
    python src/lyric_generation.py
 
 7. **Run Tests (Optional)**
 
+   ```bash
    python -m unittest discover tests
