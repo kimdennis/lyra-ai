@@ -13,7 +13,7 @@ This project uses GPT-2 to generate lyrics based on a prompt. The script loads a
 This project uses the **Genius Song Lyrics** dataset, which is available on Hugging Face.
 
 - **Dataset Name:** [Genius Song Lyrics](https://huggingface.co/datasets/sebastiandizon/genius-song-lyrics)
-- **Source:** [Hugging Face Datasets](https://huggingface.co/datasets/sebastiandizon/genius-song-lyrics)
+
 - **Description:** This dataset contains a large collection of song lyrics from various artists, sourced from the Genius website. It includes metadata such as the artist's name, song title, album, and the lyrics themselves.
 
 This dataset is filtered based on the artist's name to fine-tune a GPT-2 model for generating lyrics in the style of a specific artist.
