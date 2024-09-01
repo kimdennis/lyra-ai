@@ -1,4 +1,4 @@
-# Ignore everything
+# Ignore everything by default
 *
 
 # Allow tracking of essential files
@@ -20,6 +20,14 @@ logs/
 venv/
 node_modules/
 Pipfile.lock
+
+# Ignore specific large files in the torch library
+venv/Lib/site-packages/torch/lib/torch_cpu.dll
+venv/Lib/site-packages/torch/lib/dnnl.lib
+
+# Ignore model files and directories
+models/
+models/fine_tuned_model/
 
 # Ignore build and distribution directories
 build/
