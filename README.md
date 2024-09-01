@@ -1,4 +1,4 @@
-# Lyric Generation Script
+# LyraAI - Lyric Script Generator
 
 This project uses GPT-2 to generate lyrics based on a prompt. The script loads a fine-tuned GPT-2 model and generates text that resembles song lyrics.
 
@@ -8,7 +8,17 @@ This project uses GPT-2 to generate lyrics based on a prompt. The script loads a
 - `models/`: Directory containing the fine-tuned GPT-2 model.
 - `generated_lyrics/`: Directory where the generated lyrics are saved.
 
-### Prerequisites
+## Dataset
+
+This project uses the **Genius Song Lyrics** dataset, which is available on Hugging Face.
+
+- **Dataset Name:** [Genius Song Lyrics](https://huggingface.co/datasets/sebastiandizon/genius-song-lyrics)
+- **Source:** [Hugging Face Datasets](https://huggingface.co/datasets/sebastiandizon/genius-song-lyrics)
+- **Description:** This dataset contains a large collection of song lyrics from various artists, sourced from the Genius website. It includes metadata such as the artist's name, song title, album, and the lyrics themselves.
+
+This dataset is filtered based on the artist's name to fine-tune a GPT-2 model for generating lyrics in the style of a specific artist.
+
+## Prerequisites
 
 - Python 3.7 or later
 - Virtual environment (optional but recommended)
