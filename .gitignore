@@ -1,59 +1,25 @@
-# Ignore everything by default
+# Ignore everything
 *
 
-# Allow tracking of essential files
-!.gitignore
+# Unignore essential files
+!.gitattributes
 !README.md
 !requirements.txt
+
+# Unignore directories
 !src/
 !tests/
 !data/processed/
 !notebooks/
 
-# Ignore generated and temporary files
-data/*
-data/processed/*
+# Ignore specific files and directories
+venv/
 logs/
+models/
 *.log
 
-# Ignore virtual environments and dependencies
-venv/
-node_modules/
-Pipfile.lock
-
-# Ignore specific large files in the torch library
-venv/Lib/site-packages/torch/lib/torch_cpu.dll
-venv/Lib/site-packages/torch/lib/dnnl.lib
-
-# Ignore model files and directories
-models/
-models/fine_tuned_model/
-
-# Ignore build and distribution directories
-build/
-dist/
-*.egg-info/
-*.egg
+# Ignore compiled files and temporary files
+*.pyc
 __pycache__/
-*.py[cod]
-*~
-
-# Ignore IDE and editor files
-.vscode/
-.idea/
-
-# Ignore coverage and test results
-.tox/
-.coverage
-coverage.xml
-nosetests.xml
-
-# Ignore OS specific files
+*.tmp
 .DS_Store
-Thumbs.db
-Desktop.ini
-
-# Ignore sensitive files
-*.env
-.env
-.env.*
