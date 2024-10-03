@@ -6,6 +6,9 @@
 !README.md
 !requirements.txt
 
+# Unignore specific files
+!lyra.png
+
 # Unignore directories
 !src/
 !tests/
