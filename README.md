@@ -1,6 +1,6 @@
 # LyraAI - Lyric Script Generator
 
-![LyraAI Logo](lyra.png)
+<img src="./lyra.png" alt="logo" width="250"/>
 
 This project uses GPT-2 to generate lyrics based on a prompt. The script loads a fine-tuned GPT-2 model and generates text that resembles song lyrics.
 
